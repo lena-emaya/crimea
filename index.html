@@ -19,24 +19,31 @@ body { margin:0; padding:0; }
     left: 20px;
     top: 10px;
     position: absolute;
-    
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 2px rgba(48, 57, 61, 0.3);
+    border-radius: 3px;
      /* box-shadow: 0 1px 2px rgba(0,0,0,0.10); */
    
 }    
  
 h1{
-  font:  16px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font:  25px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  color:rgb(34, 52, 85);
+  padding: 10px 5px 0px 20px;
+
 }
 
 .legend {
     /* position: absolute;
-    right: 10px;
-top: 20px; */
-background-color: rgba(246, 247, 242, 0.89);
-    padding: 10px;
-    border-radius: 3px;
+    left: 10px;
+top: px; */
+
+    padding: 10px 5px 20px 20px;
+    
+    
 font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-width: 300px;
+width: 350px;
+
 }
  
 
@@ -50,10 +57,9 @@ width: 10px;
 } */
 
 img{
-  padding: 5px;
-  bottom: 10px;
-  height: 20px;
-  width: 20px;
+  height: 22px;
+  width: 22px;
+  box-shadow: 0 1px 2px rgba(48, 57, 61, 0.3);
 }
 
 .mapboxgl-ctrl.mapboxgl-ctrl-attrib {
@@ -62,8 +68,21 @@ img{
 } 
 
 mapboxgl-ctrl-bottom-right {
-    left: 40px;
-    bottom: 0;
+  left: 40px;
+  bottom: 0;
+}
+
+.block{
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 5px;
+  padding-top: 5px; 
+}
+
+.legend_text{
+  font-weight: 400;
+  margin-left: 10px;
+  color:rgb(34, 52, 85);
 }
 
 </style>
@@ -72,13 +91,13 @@ mapboxgl-ctrl-bottom-right {
 <div class="container"> 
 <h1>Крым-рым-рым</h1>
 <div class='legend'>
-  <div><img src="oopt_legend.svg" alt="image description1"></span>объекты природного наследия</div>
-  <div><img src="okn_legend.svg" alt="image description2"></span>объекты культурного наследия</div>
-  <div><img src="loss_legend.svg" alt="image description3"></span>утраченные объекты (участки объектов) наследия</div>
-  <div><img src="threat_legend.svg" alt="image description4"></span>объекты наследия, находящиеся под угрозой уничтожения</div>
-  <div><img src="zastroilka_legend.svg" alt="image description"></span>застройка, разрушающая исторический культурный ландшафт</div>
+  <div class="block"><img src="oopt_legend.svg" alt="image description1"><div class='legend_text'>объекты природного наследия</div></div>
+  <div class="block"><img src="okn_legend.svg" alt="image description2"><div class='legend_text'>объекты культурного наследия</div></div>
+  <div class="block"><img src="loss_legend.svg" alt="image description3"><div class='legend_text'>утраченные объекты (участки объектов) наследия</div></div>
+  <div class="block"><img src="threat_legend.svg" alt="image description4"><div class='legend_text'>объекты наследия, находящиеся под угрозой уничтожения</div></div>
+  <div class="block"><img src="zastroilka_legend.svg" alt="image description"><div class='legend_text'>застройка, разрушающая исторический культурный ландшафт</div></div>
+  <div class="block"><img src="ubk_legend.svg" alt="image description"><div class='legend_text'>граница Южного берега Крыма</div></div>
 </div>
-
 </div>
 
  
