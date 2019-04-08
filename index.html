@@ -16,13 +16,13 @@ body { margin:0; padding:0; }
 <style>
 
 .container{
-    left: 10px;
+    left: 20px;
     top: 10px;
     position: absolute;
-    background-color: rgba(224, 224, 224, 0.89);
+    /* background-color: rgba(224, 224, 224, 0.89);
     padding: 10px;
-    /* box-shadow: 0 1px 2px rgba(0,0,0,0.10); */
-    border-radius: 3px;
+    /* box-shadow: 0 1px 2px rgba(0,0,0,0.10);
+    border-radius: 3px; */
 }    
  
 h1{
@@ -30,19 +30,14 @@ h1{
 }
 
 .legend {
-
-
-
+    position: absolute;
+    right: 10px;
+bottom: 20px;
 font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-
-
-
-z-index: 1; padding-bottom: 10px;
+width: 300px;
 }
  
-.legend h4 {
-margin: 0 0 10px;
-}
+
  
 .legend div span {
 border-radius: 50%;
@@ -51,21 +46,30 @@ height: 10px;
 margin-right: 5px;
 width: 10px;
 }
- 
+
+.mapboxgl-ctrl.mapboxgl-ctrl-attrib {
+  background-color: rgba(255, 255, 255, 0);
+
+} 
+
+mapboxgl-ctrl-bottom-right {
+    left: 40px;
+    bottom: 0;
+}
+
 </style>
  
 <div id='map'></div>
 <div class="container"> 
 <h1>Крым уцуц</h1>
-<div id='county-legend' class='legend' style='display: none;'>
-<h4>инфа</h4>
-<div><span style='background-color: #723122'></span>объекты природного наследия</div>
-<div><span style='background-color: #8B4225'></span>объекты культурного наследия</div>
-<div><span style='background-color: #A25626'></span>утраченные объекты (участки объектов) наследия</div>
-<div><span style='background-color: #B86B25'></span>объекты наследия, находящиеся под угрозой уничтожения</div>
-<div><span style='background-color: #B86B25'></span>застройка, разрушающая исторический культурный ландшафт</div>
 
 </div>
+<div class='legend'>
+    <div><span style='background-color: #723122'></span>объекты природного наследия</div>
+    <div><span style='background-color: #8B4225'></span>объекты культурного наследия</div>
+    <div><span style='background-color: #A25626'></span>утраченные объекты (участки объектов) наследия</div>
+    <div><span style='background-color: #B86B25'></span>объекты наследия, находящиеся под угрозой уничтожения</div>
+    <div><img src="zastroika.svg" width="20" height="22" alt="image description"></span>застройка, разрушающая исторический культурный ландшафт</div>
 </div>
  
 <script>

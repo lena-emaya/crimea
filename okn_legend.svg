@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="41px" viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="41" height="41" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="41" height="41" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="Rectangle" stroke="#10CAFE" mask="url(#mask-2)" stroke-width="2" fill-opacity="0.3" fill="#10B3FE" stroke-dasharray="1,1" xlink:href="#path-1"></use>
+        <g id="Group" transform="translate(9.000000, 9.000000)">
+            <circle id="Oval" stroke="#2CA9FD" fill="#FFFFFF" cx="11.5" cy="11.5" r="11.5"></circle>
+            <path d="M11.5,5 L5,8.4453 L5,9 L18,9 L18,8.4453 L11.5,5 Z M6,10 L6,15 L5,16.5547 L5,18 L18,18 L18,16.5547 L17,15 L17,10 L6,10 Z M8.6152,11 C8.7842,10.9977 8.947,11.0639 9.0664,11.1836 L11.5,13.6172 L13.9336,11.1836 C14.1781,10.9399 14.5738,10.9404 14.8176,11.1849 C14.9341,11.3017 14.9997,11.46 15,11.625 L15,15.8672 C15.0049,16.2124 14.729,16.4962 14.3838,16.501 C14.0386,16.5059 13.7548,16.23 13.75,15.8848 C13.7499,15.8789 13.7499,15.873 13.75,15.8671 L13.75,13.1328 L11.9414,14.9414 C11.6974,15.1847 11.3026,15.1847 11.0586,14.9414 L9.25,13.1328 L9.25,15.8672 C9.2549,16.2124 8.979,16.4962 8.6338,16.501 C8.2887,16.5059 8.0049,16.2301 8,15.8849 C7.9999,15.879 7.9999,15.8731 8,15.8672 L8,11.625 C8,11.2836 8.2739,11.0054 8.6152,11 Z" id="Shape" fill="#139EFB" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
