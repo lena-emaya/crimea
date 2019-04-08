@@ -19,10 +19,9 @@ body { margin:0; padding:0; }
     left: 20px;
     top: 10px;
     position: absolute;
-    /* background-color: rgba(224, 224, 224, 0.89);
-    padding: 10px;
-    /* box-shadow: 0 1px 2px rgba(0,0,0,0.10);
-    border-radius: 3px; */
+    
+     /* box-shadow: 0 1px 2px rgba(0,0,0,0.10); */
+   
 }    
  
 h1{
@@ -30,21 +29,31 @@ h1{
 }
 
 .legend {
-    position: absolute;
+    /* position: absolute;
     right: 10px;
-bottom: 20px;
+top: 20px; */
+background-color: rgba(246, 247, 242, 0.89);
+    padding: 10px;
+    border-radius: 3px;
 font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 width: 300px;
 }
  
 
  
-.legend div span {
+/* .legend div span {
 border-radius: 50%;
 display: inline-block;
 height: 10px;
 margin-right: 5px;
 width: 10px;
+} */
+
+img{
+  padding: 5px;
+  bottom: 10px;
+  height: 20px;
+  width: 20px;
 }
 
 .mapboxgl-ctrl.mapboxgl-ctrl-attrib {
@@ -61,16 +70,17 @@ mapboxgl-ctrl-bottom-right {
  
 <div id='map'></div>
 <div class="container"> 
-<h1>Крым уцуц</h1>
+<h1>Крым-рым-рым</h1>
+<div class='legend'>
+  <div><img src="oopt_legend.svg" alt="image description1"></span>объекты природного наследия</div>
+  <div><img src="okn_legend.svg" alt="image description2"></span>объекты культурного наследия</div>
+  <div><img src="loss_legend.svg" alt="image description3"></span>утраченные объекты (участки объектов) наследия</div>
+  <div><img src="threat_legend.svg" alt="image description4"></span>объекты наследия, находящиеся под угрозой уничтожения</div>
+  <div><img src="zastroilka_legend.svg" alt="image description"></span>застройка, разрушающая исторический культурный ландшафт</div>
+</div>
 
 </div>
-<div class='legend'>
-    <div><span style='background-color: #723122'></span>объекты природного наследия</div>
-    <div><span style='background-color: #8B4225'></span>объекты культурного наследия</div>
-    <div><span style='background-color: #A25626'></span>утраченные объекты (участки объектов) наследия</div>
-    <div><span style='background-color: #B86B25'></span>объекты наследия, находящиеся под угрозой уничтожения</div>
-    <div><img src="zastroika.svg" width="20" height="22" alt="image description"></span>застройка, разрушающая исторический культурный ландшафт</div>
-</div>
+
  
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoibGVuYWVtYXlhIiwiYSI6ImNpa3VhbXE5ZjAwMXB3eG00ajVyc2J6ZTIifQ.kmZ4yVcNrupl4H8EonM3aQ';
