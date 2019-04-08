@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" stroke="#2CA9FD" fill="#FFFFFF" cx="12.5" cy="12.5" r="11.5"></circle>
+        <g id="museum-15" transform="translate(6.000000, 6.000000)"></g>
+        <path d="M12.5,6 L6,9.4453 L6,10 L19,10 L19,9.4453 L12.5,6 Z M7,11 L7,16 L6,17.5547 L6,19 L19,19 L19,17.5547 L18,16 L18,11 L7,11 Z M9.6152,12 C9.7842,11.9977 9.947,12.0639 10.0664,12.1836 L12.5,14.6172 L14.9336,12.1836 C15.1781,11.9399 15.5738,11.9404 15.8176,12.1849 C15.9341,12.3017 15.9997,12.46 16,12.625 L16,16.8672 C16.0049,17.2124 15.729,17.4962 15.3838,17.501 C15.0386,17.5059 14.7548,17.23 14.75,16.8848 C14.7499,16.8789 14.7499,16.873 14.75,16.8671 L14.75,14.1328 L12.9414,15.9414 C12.6974,16.1847 12.3026,16.1847 12.0586,15.9414 L10.25,14.1328 L10.25,16.8672 C10.2549,17.2124 9.979,17.4962 9.6338,17.501 C9.2887,17.5059 9.0049,17.2301 9,16.8849 C8.9999,16.879 8.9999,16.8731 9,16.8672 L9,12.625 C9,12.2836 9.2739,12.0054 9.6152,12 Z" id="Shape" fill="#139EFB" fill-rule="nonzero"></path>
+    </g>
+</svg>

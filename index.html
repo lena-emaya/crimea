@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset='utf-8' />
-<title>Update a choropleth layer by zoom level</title>
+<title>Crimea map</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
@@ -16,23 +16,28 @@ body { margin:0; padding:0; }
 <style>
 
 .container{
+    left: 10px;
+    top: 10px;
     position: absolute;
+    background-color: rgba(224, 224, 224, 0.89);
+    padding: 10px;
+    /* box-shadow: 0 1px 2px rgba(0,0,0,0.10); */
+    border-radius: 3px;
 }    
  
 h1{
-    left: 10px;  
+  font:  16px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
 .legend {
-background-color: #fff;
-border-radius: 3px;
 
-box-shadow: 0 1px 2px rgba(0,0,0,0.10);
+
+
 font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-padding: 10px;
 
-left: 10px;
-z-index: 1;
+
+
+z-index: 1; padding-bottom: 10px;
 }
  
 .legend h4 {
@@ -54,10 +59,11 @@ width: 10px;
 <h1>Крым уцуц</h1>
 <div id='county-legend' class='legend' style='display: none;'>
 <h4>инфа</h4>
-<div><span style='background-color: #723122'></span>какие-то территории</div>
-<div><span style='background-color: #8B4225'></span>еще какие-то</div>
-<div><span style='background-color: #A25626'></span>и еще</div>
-<div><span style='background-color: #B86B25'></span>и еще</div>
+<div><span style='background-color: #723122'></span>объекты природного наследия</div>
+<div><span style='background-color: #8B4225'></span>объекты культурного наследия</div>
+<div><span style='background-color: #A25626'></span>утраченные объекты (участки объектов) наследия</div>
+<div><span style='background-color: #B86B25'></span>объекты наследия, находящиеся под угрозой уничтожения</div>
+<div><span style='background-color: #B86B25'></span>застройка, разрушающая исторический культурный ландшафт</div>
 
 </div>
 </div>
@@ -67,9 +73,9 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibGVuYWVtYXlhIiwiYSI6ImNpa3VhbXE5ZjAwMXB3eG00a
 var map = new mapboxgl.Map({
 container: 'map',
 style: 'mapbox://styles/lenaemaya/cjtxwb9bn0rg01fo9vfio37jc',
-center: [34.467223, 44.847636],
-minZoom: 6,
-zoom: 7.75
+center: [34.082, 44.509],
+minZoom: 9,
+zoom: 10.05
 });
  
 var zoomThreshold = 4;
